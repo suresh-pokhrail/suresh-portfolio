@@ -1,0 +1,97 @@
+<section class="section about" id='about' (keydown)="onKeyDown($event)" tabindex="0">
+    <div class="container">
+        <div class="section-box">
+            <div class="about-title" data-animate="slideInUp" data-animate-duration="1000">
+                <h3 class="section-title">
+                    <span class='n-section-title'>01.</span>About Me
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <div class="about-description">
+                        <p data-animate="fadeInLeft" [attr.data-animate-delay]="200 + (1 * 300)"
+                            data-animate-duration="800">
+
+                            My name is <b>Suresh Pokhrail</b>, and I hail from the state of Uttrakhand. I come from a
+                            Hindu Brahmin
+                            family.
+                        </p>
+                        <p data-animate="fadeInLeft" [attr.data-animate-delay]="200 + (2 * 300)"
+                            data-animate-duration="800"> I am proficient as well as a capable and confident person. I
+                            have learned to be
+                            very hard-working as well as passionate about my career. I am also passionate about learn
+                            new things.
+                        </p>
+                        <p data-animate="fadeInLeft" [attr.data-animate-delay]="200 + (2 * 300)"
+                            data-animate-duration="800">
+                            I have completed my intermediate education
+                            at <b>Shri Guru Ram Rai Public School, Bindal, Dehradun</b>.
+                            I also complete my graduation in <b>BCA</b> from <b>Shri Guru Ram Rai University,
+                                Dehradun</b>.
+                        </p>
+                        <p data-animate="fadeInLeft" [attr.data-animate-delay]="200 + (2 * 300)"
+                            data-animate-duration="800">
+                            Currently I am working as full-stack Developer at <a
+                                href="www.arsalsoftware.com"><strong>Arsal Software
+                                    Solution</strong></a>.
+                        </p>
+                        <p data-animate="fadeInLeft" [attr.data-animate-delay]="200 + (2 * 300)"
+                            data-animate-duration="800"> I enjoy writing Poems, Shayeri, creating art patterns, playing
+                            musical
+                            instruments like harmonium and Voilin.<br>
+                            I wrote a song <a href="https://youtu.be/qU4OOrDA8H8"><strong>'ISHQ MERA'</strong></a>, must
+                            watch and
+                            do comment also.<br>
+                            I also love to play Football, Kabaddi, Badminton, Carrom, etc.
+                        </p>
+<!-- 
+
+                        <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1000">
+                                <span class="underline">Angular </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1100">
+                                <span class="underline">RxJS </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1200">
+                                <span class="underline">HTML &amp; (S)CSS </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1300">
+                                <span class="underline">Laravel </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1400">
+                                <span class="underline">Express </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1500">
+                                <span class="underline">WordPress </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1600">
+                                <span class="underline">Jasmine / Karma (TDD) </span>
+                            </li>
+                            <li class="skill-element" data-animate="scaleIn" data-animate-delay="1700">
+                                <span class="underline">CI / CD </span>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0 text-center" data-animate="morphIn"
+                    data-animate-duration="1200" data-animate-delay="600">
+                    <div class="about-img-container">
+                        <img (click)='onImageClick()' class="rounded about-image clickable" width="100%"
+                            src="assets/images/about_me.jpg" alt="José Andrés" title="Click para ver imagen ampliada">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para imagen ampliada -->
+    <div class="image-modal-overlay" *ngIf="isImageModalOpen" (click)="onModalBackdropClick($event)" [@fadeInOut]>
+        <div class="image-modal-container">
+            <button class="modal-close-btn" (click)="closeImageModal()" aria-label="Cerrar modal">
+                <span>&times;</span>
+            </button>
+            <img class="modal-image" src="assets/images/about_me.jpg" alt="Suresh Pokhrail - about me" [@zoomIn]>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,170 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Certificates",
+  "Header.Item5": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "sureshpokhrail.pdf",
+  "Loading": "Loading...",
+
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "I have <span class='underline'>+10 years of experience</span> developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>, applying good practices and development standards.",
+  "Banner.ActionBtn": "Say Hi",
+
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "In <span class='underline'>+10 years of experience</span> I have covered many roles: <span class='underline'>Systems Analyst</span>, <span class='underline'>Backend Developer</span>, <span class='underline'>Frontend Developer</span>, and <span class='underline'>Technical Lead</span>. I love contributing my knowledge to create new things that help solve problems.",
+    "My capabilities also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I am working on.",
+    "I also program things for my personal use, whether for hobby or utility.",
+    "Some of the technologies I have trained and worked with include (but are not limited to):"
+  ],
+
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "Arsal Software Solutions",
+      "Title": "Fullstack Developer In Java",
+      "Date": "Jan 2022 - Oct 2024",
+      "Description": [
+        "Leading a team of 2 people in the development of a attendance and leave modules.",
+        "Updation or enhancement in existing modules",
+        "Implementation of continuous integration Payment Gateway platform like sabpaisa, paytm, POS Machine, Biometric Machine.",
+        "Planning and reporting meetings.",
+        "Developed some websites using PHP, Xampp and MYSQL"
+      ]
+    },
+    {
+      "Tab": "Freelancer",
+      "Title": "Freelancer",
+      "Date": "March 2025 - May 2025",
+      "Description": [
+        "Developed School Admission Enquiry project.",
+        "Creation of platforms with Xampp, PHP, MYSQL, HTML, CSS"
+      ]
+    }
+  ],
+
+  "OtherProjects.Title": "Projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "My First Website",
+      "Description": "When I was in 10th grade, I created my very first website that ran on localhost only for my practical.",
+      "imgs": ["assets/images/hands-game.png"],
+      "ghLink": "#",
+      "demoLink": "#",
+      "Technologies": ["HTML", "CSS"]
+    },
+    {
+      "Title": "Hotel Management",
+      "Description": "I create a project on hotel management in C++ during my 12th, which is capable of checking room availability, check-in, check-out, payment (only for tracking).",
+      "imgs": ["assets/images/countries-viewer.png"],
+      "ghLink": "#",
+      "demoLink": "#",
+      "Technologies": ["C++"]
+    },
+    {
+      "Title": "Ludo",
+      "Description": "I developed a Ludo game with C-graphics after 12th. First, I learned C-graphics from sketching a Taj Mahal portrait online. Then, I used my skills and graphics to develop a Ludo game.",
+      "ghLink": "#",
+      "demoLink": "#",
+      "Technologies": ["C++", "C-graphics"]
+    },
+    {
+      "Title": "Bank Web Application",
+      "Description": "I took a full-stack course during my final semester of college. We learned cross-platform programming using Java as a server, Apache Tomcat as a server, MySQL as a database, and HTML, CSS, and Javascript as frontend technology.",
+      "ghLink": "#",
+      "demoLink": "#",
+      "Technologies": ["HTML", "CSS", "Javascript", "JSP Servlet", "MySQL", "Ajax"]
+    },
+    {
+      "Title": "E- Commerce Web Application",
+      "Description": "I learned and developed E-Commerce applications using frameworks like Spring Boot and Angular from Udemy. Where I integrate payment gateway for online payment and third-party login panel.",
+      "ghLink": "#",
+      "demoLink": "#",
+      "Technologies": ["Angular", "Spring Boot", "MySQL"]
+    },
+    {
+      "Title": "Bank Microservice Application ",
+      "Description": "Currently, I am learning Spring boot microservices from udemy.",
+      "ghLink": "https://github.com/andresjosehr/profile-card-component",
+      "demoLink": "https://projects.andresjosehr.com/profile-card-component",
+      "Technologies": ["Springboot", "Docker","Postman", "GIT" ,"MySQL", "Promtail", "Alloy", ""]
+    }
+  ],
+
+  
+  "FeatureCertificates.Title": "My Certificates",
+  "FeatureCertificates.Label": "Certificates",
+  "FeatureCertificates.certificates": [
+    {
+      "Title": "Programmer of the year",
+      "imgs": "assets/images/certificates/prog_of_year.jpg"
+    },
+    {
+      "Title": "Angular",
+      "imgs": "assets/images/certificates/angular.jpg"
+    },
+    {
+      "Title": "Java 8 Features",
+      "imgs": "assets/images/certificates/java-8-feature.jpg"
+    },
+    {
+      "Title": "Automation RPA",
+      "imgs": "assets/images/certificates/automation-rpa-360.jpg"
+    },
+    {
+      "Title": "Cisco",
+      "imgs": "assets/images/certificates/cisco_page.jpg"
+    },
+    {
+      "Title": "Cisco Packet Tracer",
+      "imgs": "assets/images/certificates/cisco-pkt-tracer.jpg"
+    },
+    {
+      "Title": "Cyber Security Essentials",
+      "imgs": "assets/images/certificates/Cybersecurity-Es-certificate_page.jpg"
+    },
+    {
+      "Title": "Ethical Hacking",
+      "imgs": "assets/images/certificates/Ethical-hacking.jpg"
+    },
+    {
+      "Title": "Full Stack E-commerce",
+      "imgs": "assets/images/certificates/Full-Stack-E-commerce.jpg"
+    },
+    {
+      "Title": "Learnathon",
+      "imgs": "assets/images/certificates/learnathon.jpg"
+    },
+    {
+      "Title": "Microsoft AI Classroom",
+      "imgs": "assets/images/certificates/microsoft-ai-classroom.jpg"
+    },
+    {
+      "Title": "Modernizing Python",
+      "imgs": "assets/images/certificates/modernizing-python.jpg"
+    },
+    {
+      "Title": "TCS iON",
+      "imgs": "assets/images/certificates/TCSIQN.jpg"
+    },
+    {
+      "Title": "The Power of You",
+      "imgs": "assets/images/certificates/the-power-of-you.jpg"
+    },
+    {
+      "Title": "Train India",
+      "imgs": "assets/images/certificates/trainindia.jpg"
+    },
+    {
+      "Title": "VMware",
+      "imgs": "assets/images/certificates/vmware.jpg"
+    }
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
+  "Contact.Btn": "Contact Me"
+}

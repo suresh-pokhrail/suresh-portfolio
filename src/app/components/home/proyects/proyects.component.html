@@ -1,0 +1,132 @@
+<section class="section certificates" id='certificates'>
+    <div class="container">
+        <div class="section-box">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <h3 class="section-title">
+                    <span class='n-section-title'>04.</span> {{"FeatureCertificates.Title" | translate}}
+                </h3>
+            </div>
+
+            <div class="container my-5">
+                <div class="row">
+                    <div *ngFor='let certificate of "FeatureCertificates.certificates" | translate; let i = index'
+                        class="col-12 col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                        
+                        <figure class="figure">
+                            <div class="image-container">
+                                <img [src]="certificate.imgs"
+                                    (click)="openModal(modalContent,certificate.Title, certificate.imgs)"
+                                    class="img-feature-proyect figure-img img-fluid rounded" style="cursor: pointer;"
+                                    [alt]="certificate.Title">
+                            </div>
+                            <figcaption class="figure-caption text-center mt-2">
+                                {{certificate.Title}}
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- <div  
+            class="d-flex proyect-container col-lg-3" >
+                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2==0">
+                    <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
+                        <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
+                            <div #imgContainer class='img-container'>
+                                <img class='img-feature-proyect rounded' [src]="img" >
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2==0">
+                    <div class="img-feature-proyect-box">
+                        <div class="img-container" style='width: auto;'>
+                            <img class='img-feature-proyect rounded' [alt]="project.imgs" width='600px'>
+                        </div>
+                    </div>
+                </div>
+                <div [class.proyect-info-right]='i%2==0' [class.proyect-info-left]='i%2!=0' class="h-100" style="background-image: url('{{project.img}}');">
+                    <div class="proyect-box">
+                        <h4 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="feature-proyect">{{"FeatureCertificates.Label" | translate}}</h4>
+                        <h5 [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-name">{{project.Title}}</h5>
+
+                         <div class="proyect-description-box" (click)='debug()'>
+                            <p class="mb-0" [innerHTML]="project.Description">
+                            </p>
+                        </div> -->
+            <!-- <ul [class.justify-content-end]='i%2==0' [class.justify-content-start]='i%2!=0' class="proyect-skills">
+                            <li *ngFor='let technology of project.Technologies' class="ml-3">
+                              <span class="underline technology">{{technology}}</span>
+                            </li>
+                        </ul> -->
+            <!-- <div [class.text-right]='i%2==0' [class.text-left]='i%2!=0' class="proyect-links">
+                            <a *ngIf="project['ghLink']" style='color: inherit' [href]="project['ghLink']" target="_blank"><i class="ml-3 fab fa-github"></i></a>
+                            <a *ngIf="project['demoLink']" style='color: inherit' [href]="project['demoLink']" target="_blank"><i class="ml-3 fas fa-external-link-alt"></i></a>
+                        </div> 
+                    </div>
+                </div>
+                <owl-carousel-o class='owl-carousel-o' [options]="customOptions" *ngIf="i%2!=0">
+                    <ng-container *ngFor="let img of project.imgs; let imgIndex = index">
+                        <ng-template carouselSlide [id]="project.Title+'_slide_'+i+'_'+imgIndex">
+                            <div class='img-container'>
+                                <img class='img-feature-proyect rounded' [src]="img" [alt]="project.Title">
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+                <div class="img-feature-proyect-container" data-aos="fade-up" data-aos-duration="1000" *ngIf="i%2!=0">
+                    <div class="img-feature-proyect-box">
+                        <div class="img-container" style='width: auto;'>
+                            <img class='img-feature-proyect rounded' [src]="project.imgs" [alt]="project.imgs" width='600px'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+
+
+<ng-template #modalContent let-modal>
+  <div class="bg-dark text-black"
+       style="background: transparent !important; border: none !important; box-shadow: none !important;">
+
+    <div class="d-flex justify-content-between align-items-center border-0">
+      <h5 class="modal-title ml-3">{{ activeImageTitle }}</h5>
+      <button type="button"
+              class="btn-close btn-close-white mr-3"
+              aria-label="Close"
+              (click)="modal.close()"></button>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <img [src]="activeImageSrc"
+           [alt]="activeImageTitle"
+           class="img-fluid"
+           style="max-height: 80vh;">
+    </div>
+  </div>
+</ng-template>
+
+
+<!-- 
+<ng-template #modalContent let-modal>
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-dark text-white"
+            style=" background: transparent !important;  border: none !important;  box-shadow: none !important;">
+
+            <div class="modal-header border-0">
+                <h5 class="modal-title">{{ activeImageTitle }}</h5>
+                <button type="button" class="btn-close btn-close-white" aria-label="Close"
+                    (click)="modal.close()"></button>
+            </div>
+
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <img [src]="activeImageSrc" [alt]="activeImageTitle" class="img-fluid" style="max-height: 80vh;">
+            </div>
+        </div>
+    </div>
+</ng-template> -->
