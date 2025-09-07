@@ -1,5 +1,6 @@
 {
   "hosting": {
+    
     "public": "dist/sureshpokhrail-portfolio/browser",
     "ignore": [
       "firebase.json",
